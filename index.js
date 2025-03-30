@@ -94,45 +94,22 @@ window.onload = () => {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const showcaseElements = document.querySelectorAll(".showcaseDesign");
+    const observeElements = (selector) => {
+        const elements = document.querySelectorAll(selector);
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        }, { threshold: 0.5 });
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("show");
-            }
-        });
-    }, { threshold: 0.5 });
+        elements.forEach(element => observer.observe(element));
+    };
 
-    showcaseElements.forEach(element => observer.observe(element));
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const elementsToAnimate = document.querySelectorAll(".crossSectionImage, .proccessSectionContainer");
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("show");
-            }
-        });
-    }, { threshold: 0.5 });
-
-    elementsToAnimate.forEach(element => observer.observe(element));
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const serviceElements = document.querySelectorAll(".service");
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("show");
-            }
-        });
-    }, { threshold: 0.5 });
-
-    serviceElements.forEach(element => observer.observe(element));
+    observeElements(".showcaseDesign");
+    observeElements(".crossSectionImage, .proccessSectionContainer");
+    observeElements(".service");
 });
 
 
