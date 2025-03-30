@@ -1,0 +1,2570 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+    position: fixed;
+    top: 0;
+    height: 134px;
+    width: 100%;
+    background-color: #F8F6F3;
+    z-index: 9999;
+}
+.headerContainer{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerLogo{
+    height: 100%;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+.logoText {
+    padding-top: 10px; /* Shift the text down slightly */
+    margin-left: 4px;  /* Space between logo and text */
+    font-size: 20px;
+    font-weight: bold;
+    color: #0732EF;
+    font-family: Arial, sans-serif;
+  }
+.headerLogo a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0732EF;
+    margin-bottom: 20px;
+}
+header nav{
+    gap: 20px;
+}
+header nav a{
+    font-family: madefor-text, helveticaneuew01-45ligh, helveticaneuew02-45ligh, helveticaneuew10-45ligh, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0em;
+    color: #0732EF;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+a.active{
+    text-decoration: underline;
+ }
+
+
+ main{
+    width: 100%;
+    height: auto;
+    margin-top: 134px;
+    background-color: #F8F6F3;
+ }
+ .introductorySection{
+    width: 100%;
+    height: calc(100vh - 134px);
+ }
+ .introductorySectionContainer{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+ }
+ .introductorySectionPart{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+ }
+ .introductoryText h1{
+    font-size: 76px;
+    font-family: sans-serif;
+    color: #0732EF;
+    margin-top: 40px;
+    letter-spacing: -2px;
+ }
+ .introductoryText button{
+    width: 280px;
+    height: 52px;
+    border-radius: 50px;
+    border: 1px solid #0732EF;
+    color: #0732EF;
+    font-size: 18px;
+    background-color: #F8F6F3;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: -20px;
+ }
+ .introductoryText button:hover{
+    background-color: #0732EF;
+    color: #F8F6F3;
+    transition: 0.5s;
+ }
+ .textBoxesContainer{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-top: 100px;
+ }
+ .textBox{
+    width: 427px;
+    height: 276px;
+    border-radius: 20px;
+    border: 1px solid #0732EF;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    position: relative;
+ }
+ .textBoxContainer{
+    width: 90%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .textBoxTitle,
+ .textBoxParagraph,
+ .textBoxReadMore{
+    width: 100%;
+    font-family: sans-serif;
+    color: #0732EF;
+ }
+ .textBoxTitle h2{
+    font-size: 24px;
+    letter-spacing: -0.5px;
+ }
+ .textBoxTitle p{
+    font-size: 20px;
+    font-weight: lighter;
+ } 
+ .textBoxReadMore{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .readMoreContainer{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .textBoxReadMore span{
+    font-size: 19px;
+    display: inline-block;
+    margin-top: 0px;
+ }
+ .textBox:hover, .textBox.active {
+  transform: translateY(-30px);
+ }
+
+.textBoxReadMore:hover, .textBox.active .textBoxReadMore {
+  background-color: #0732EF;
+  color: #F8F6F3;
+  cursor: pointer;
+}
+
+
+.designBoxes{
+    width: 100%;
+    height: 100vh;
+}
+.designBoxesContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    grid-template-rows: repeat(3, 1fr);    /* 3 equal-height rows */
+    gap: 2px; /* spacing between boxes */
+    width: 75%; /* or fixed width if needed */
+    float: right;
+    margin: 0 auto; /* center horizontally */
+  }
+  
+  .designBox {
+    height: 230px; /* control height */
+  }
+
+  .designBoxOne{
+    background-color: #BCC5F2;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  .designBoxThree{
+    background-color: #D9FB99;
+    border-bottom-left-radius: 70%;
+  }
+  .designBoxFour{
+    background-color: #D9FB99;
+    border-top-right-radius: 70%;
+  }
+  .designBoxFive{
+    background-color: #BCC5F2;
+    border-bottom-left-radius: 70%;
+  }
+  .designBoxEight{
+    background-color: #D9FB99;
+    border-top-right-radius: 70%;
+  }
+  .designBoxNine{
+    background-color: #0732EF;
+    border-bottom-left-radius: 70%;
+  }
+
+
+  .aboutUsSection{
+    width: 100%;
+    height: calc(95vh - 134px);
+    background-color: #BCC5F2;
+  }
+  .aboutUsSection-container{
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  .aboutUsSection-container h1{
+    font-size: 76px;
+    font-family: sans-serif;
+    color: #0732EF;
+    margin-top: 120px;
+    letter-spacing: -2px;
+  }
+  .aboutUsSection-textBox{
+    max-width: 50%;
+  }
+  .aboutUsSection-textBox h2{
+    font-family: sans-serif;
+    color: #0732EF;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+  }
+  .aboutUsSection-textBox .textBoxParagraph{
+    max-width: 100%;
+  }
+  .aboutUsSection-textBox p{
+    font-family: sans-serif;
+    color: #0732EF;
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    font-weight: lighter;
+    line-height: 32px;
+  }
+  .aboutUsSection button{
+    width: 280px;
+    height: 52px;
+    border-radius: 50px;
+    border: 1px solid #0732EF;
+    color: #0732EF;
+    font-size: 18px;
+    background-color: #BCC5F2;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 40px;
+  }
+  .aboutUsSection button:hover{
+    background-color: #0732EF;
+    color: #F8F6F3;
+    transition: 0.5s;
+ }
+  .crossSectionImage img{
+    width: 708px;
+    height: 465px;
+    border-radius: 30px;
+    position: absolute;
+    right: 100px;
+    margin-top: -232.5px;
+    z-index: 1;
+    object-fit: cover;
+  }
+
+  .crossSectionImage, 
+.proccessSectionContainer {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.crossSectionImage.show, 
+.proccessSectionContainer.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+  .ourServicesSection{
+    width: 100%;
+    height: fit-content;
+    background-color: #0732EF;
+    overflow: hidden;
+  }
+  .ourServicesSectionContainer{
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  .ourServicesTextBox{
+    font-family: sans-serif;
+    color: #F8F6F3;
+    max-width: 40%;
+    margin-top: 240px;
+  }
+  .ourServicesTextBox h1{
+    font-size: 76px;
+    font-family: sans-serif;
+    margin-top: 40px;
+    letter-spacing: -2px;
+  }
+  .ourServicesTextBox p{
+    font-family: sans-serif;
+    color: #F8F6F3;
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    font-weight: lighter;
+    line-height: 32px;
+  }
+  .ourServicesTextBox button{
+    width: 280px;
+    height: 52px;
+    border-radius: 50px;
+    border: 1px solid #F8F6F3;
+    color: #F8F6F3;
+    font-size: 18px;
+    background-color: #0732EF;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 40px;
+  }
+  .ourServicesTextBox button:hover{
+    border: 1px solid #D9FB99;
+    color: #0732EF;
+    background-color: #D9FB99;
+  }
+  .serviceBoxes{
+    width: 100%;
+    height: fit-content;
+    margin-top: 50px;
+  }
+  .serviceBoxContainer{
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    display: block;
+  }
+  .upperContainer,
+  .bottomContainer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .upperContainer{
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  .service{
+    width: 31.5%;
+    height: 265px;
+    border-radius: 20px;
+    border: 1px solid #D9FB99;
+  }
+  .service {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  .service.show {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+  .serviceTopPart {
+    display: inline-block;
+    transition: transform 1.3s ease; /* Smooth transition */
+  }
+  
+  /* Rotate on hover */
+  .service:hover .serviceTopPart {
+    transform: rotate(180deg); /* Rotate the element by 360 degrees */
+  }
+  .serviceContainer{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .serviceTextBox{
+    font-family: sans-serif;
+    color: white;
+  }
+  .serviceTextBox h2{
+    font-family: sans-serif;
+    color: white;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+  }
+  .serviceTextBox p{
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    font-weight: lighter;
+    line-height: 25px;
+  }
+  .boostinBusinessPart{
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 150px;
+  }
+  .boostinBusinessPart h1{
+    font-family: sans-serif;
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    letter-spacing: -2px;
+  }
+  .showCases{
+    width: 100%;
+  }
+  .showCasesContainer{
+    width: 72%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .showcase{
+    width: 220px;
+    height: 350px;
+  }
+  .showcaseDesign {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+  .showcaseDesign.show {
+      transform: translateY(0);
+      opacity: 1;
+  }
+
+  .showcase_1_DesignContainer{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .showcase_1_design{
+    width: 100%;
+    height: 70px;
+    background-color: #D9FB99;
+    border-top-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+  }
+  .showcaseText{
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+  }
+  .showcaseText h2{
+    font-size: 60px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    padding: 0;
+    margin: 0;
+  }
+  .showcase p{
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 1.8px;
+    padding: 0;
+    margin: 20px 0 0 0 ;
+  }
+
+
+  .industrySection{
+    width: 100%;
+    height: 90vh;
+    background-color: #F8F6F3;
+  }
+  .inudstrySectionContainer{
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .inudstrySectionContainer img{
+    width: 708px;
+    height: 465px;
+    border-radius: 30px;
+    position: absolute;
+    right: 100px;
+    margin-top: 125px;
+    z-index: 1;
+    object-fit: cover;
+  }
+  .industrySectionTextBox h1{
+    font-size: 76px;
+    font-family: sans-serif;
+    color: #0732EF;
+    margin-top: 40px;
+    letter-spacing: -2px;
+  }
+  .industrySectionTextBox button{
+    width: 280px;
+    height: 52px;
+    border-radius: 50px;
+    border: 1px solid #0732EF;
+    color: #0732EF;
+    font-size: 18px;
+    background-color: #F8F6F3;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 25px;
+    transition: 0.5s;
+  }
+  .industrySectionTextBox button:hover{
+    background-color: #0732EF;
+    color: #F8F6F3;
+  }
+  .industryBoxContainer{
+    display: flex;
+    align-items: flex-start;
+    gap: 75px;
+  }
+  .industryBox{
+    max-width: 275px;
+  }
+  .industryBox h2{
+    font-family: sans-serif;
+    color: #0732EF;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+  }
+  .industryBox p{
+    font-family: sans-serif;
+    color: #0732EF;
+    font-size: 19px;
+    letter-spacing: 0.2px;
+    font-weight: lighter;
+    line-height: 32px;
+  }
+
+  .proccessSection{
+    width: 100%;
+    min-height: 200vh;
+    background-color: #BCC5F2;
+    overflow: hidden;
+  }
+  .proccessSectionTitleBox{
+    width: 78%;
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .proccessSectionTitleBox h1{
+    font-size: 76px;
+    font-family: sans-serif;
+    color: #0732EF;
+    margin: 0;
+    margin-top: 40px;
+    letter-spacing: -2px;
+  }
+  .proccessSectionTitleBox h2{
+    font-family: sans-serif;
+    color: #0732EF;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    margin: 0;
+    margin-top: 35px;
+  }
+  .innderProccessSection{
+    display: flex;
+    align-items: center;
+  }
+  .innerProccessSection{
+    width: 78%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .processStepContainer{
+    width: 40%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+  }
+  .proccessSteps{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+  .proccessSectionContainer hr{
+    border: none;
+    height: 1px;
+    color: #0732EF;
+    background-color: #0732EF;
+    margin-top: 30px;
+  }
+  .processIndex{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 48px;
+    font-family: sans-serif;
+    color: #0732EF;
+    margin: 0;
+    letter-spacing: -2px;
+  }
+  .processTitle{
+    width: 24%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 24px;
+    font-family: sans-serif;
+    color: #0732EF;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .processDescription{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #0732EF;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .processDescription p{
+    max-width: 295px;
+  }
+  .innerProccessSection:hover .processIndex{
+    font-size: 60px;
+    transition: 0.65s;
+  }
+  .successStories{
+    width: 100%;
+  }
+  .successStoriesContainer{
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .successStoriesTextBox{
+    margin-top: 200px;
+  }
+  .successStoriesTextBox h1{
+    font-size: 76px;
+    font-family: sans-serif;
+    color: #0732EF;
+    margin: 0;
+    letter-spacing: -2px;
+  }
+  .successStoriesTextBox p{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #0732EF;
+    margin: 30px 0px 0px 0px;
+    font-weight: lighter;
+  }
+  .successStoriesBox{
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    float: right;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .storyProfile{
+    border-radius: 50%;
+  }
+  .successStoryParagraph p{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #0732EF;
+    max-width: 295px;
+    margin: 0;
+  }
+  .successStoryParagraph h2{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #0732EF;
+    max-width: 295px;
+  }
+
+
+  .schedulerSection{
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+  }
+  .schedulerContainer{
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+  }
+  .schedulerTextBox h1{
+    font-size: 76px;
+    font-family: sans-serif;
+    color: #0732EF;
+    margin: 0px 0px 0px 0px;
+  }
+  .schedulerTextBox p{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #0732EF;
+    margin: 30px 0px 0px 5px;
+  }
+
+  .scheduler{
+    display: flex;
+    align-items: flex-start;
+    gap: 105px;
+    margin-top: 100px;
+    border: 1px solid #0732EF;
+    padding: 25px;
+    border-radius: 30px;
+  }
+  .fc .fc-col-header-cell-cushion {
+    display: inline-block;
+    padding: 1px 1px;
+    border-style: none !important;
+  }
+  .fc .fc-col-header-cell-cushion { /* needs to be same precedence */
+    padding-top: 1px; /* an override! */
+    padding-bottom: 1px; /* an override! */
+    border: none;
+  }
+
+  .selected {
+    background-color: blue !important;  /* Blue background for the selected date */
+    color: white !important;            /* White text color */               /* Optional: make the selected date a circle */
+    font-weight: bold;                  /* Optional: make the date bold */
+  }
+  .fc-daygrid-day{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+
+  .fc table{
+    table-layout: auto;
+  }
+  .fc-view > table{  
+    min-width: 0;
+    width: auto;
+  }
+  .fc-axis{
+    min-width:50px; /*the width of times column*/
+    width:50px; /*the width of times column*/
+  }
+  .fc-day,.fc-resource-cell,.fc-content-col{
+    min-width:50px;
+    width:50px;
+  }
+  #calendar {
+    width: 400px !important;  /* Set the width to 400px */
+    height: 500px !important; /* Set the height to 400px */
+    font-family: sans-serif;
+    margin-left: -20px;
+  }
+
+  .fc-col-header-cell-cushion{
+    margin-left: 10px;
+  }
+  .fc-col-header-cell{
+    padding: 0;
+  }
+  .fc-scrollgrid .fc-scrollgrid-liquid{
+    border: none;
+    border-style: none !important;
+  }
+  .fc-scrollgrid{
+    border-radius: 20px;
+    border-style: none !important;
+  }
+  .fc-scroller{
+    border: none;
+    border-style: none !important;
+  }
+
+  .fc td, .fc th {
+    border-style: none !important;
+  }
+
+  .fc-scrollgrid .fc-scrollgrid-liquid{
+    border: none;
+    border-style: none !important;
+  }
+  .fc-scrollgrid{
+    border-radius: 20px;
+    border-style: none !important;
+  }
+  .fc-scroller{
+    border: none;
+    border-style: none !important;
+  }
+
+  .fc td, .fc th {
+    border-style: none !important;
+  }
+  #calendar td {
+    vertical-align: middle !important;
+  }
+  .fc-day{
+  color: blue;
+  text-align: center;
+  vertical-align: middle !important;
+  }
+  .fc .fc-col-header-cell-cushion {
+    margin-left: 25px;
+  }
+  #fc-dom-1{
+    margin-left: 25px;
+    color: #0732EF;
+  }
+  .fc-button.fc-button-primary{
+    background-color: #0732EF;
+  }
+  .fc-today-button.fc-button.fc-button-primary{
+    background-color: rgb(7,50,239);
+  }
+
+  .availabilityTitle{
+    color: #0732EF;
+    font-family: sans-serif;
+    font-size: 22px;
+    padding: 0px;
+    margin: 10px 0px 0px 0px;
+  }
+  .timeSlots{
+    max-width: 550px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+  .timeSlot{
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #0732EF;
+    border-radius: 80px;
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    cursor: pointer;
+  }
+  .timeSlot.active{
+    background-color: #0732EF;
+    color: #F8F6F3;
+    transition: 0.5s;
+  }
+  .timeSlot p{
+    margin: 0px;
+  }
+
+  .timeSlot:hover{
+    background-color: #0732EF;
+    color: #F8F6F3;
+    transition: 0.5s;
+  }
+
+  .meetingDescription{
+    max-width: 250px;
+  }
+  .meetingDescription h2{
+    color: #0732EF;
+    font-family: sans-serif;
+    font-size: 22px;
+    margin: 10px 0px 0px 0px;
+  }
+
+  .meetingDescription p{
+    color: #0732EF;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  .meetingDescription button{
+    width: 280px;
+    height: 52px;
+    border-radius: 50px;
+    border: 1px solid #0732EF;
+    color: #0732EF;
+    font-size: 18px;
+    background-color: #F8F6F3;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+
+  .meetingDescription button:hover{
+    background-color: #0732EF;
+    color: #F8F6F3;
+    cursor: pointer;
+  }
+
+  .popup {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Initially hidden off-screen */
+    width: 300px;
+    height: 100vh; /* Full height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: gray;
+    transition: right 0.5s ease-in-out;
+    z-index: 9999;
+    font-family: sans-serif;
+}
+
+.popup.visible {
+    right: 0; /* Slide into view */
+}
+
+.success {
+    background-color: green;
+}
+
+.error {
+    background-color: red;
+}
+.partners{
+  width: 78%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+.partnersBox{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.partners h1{
+  color: #0732EF;
+  font-family: sans-serif;
+  font-size: 76px;
+  margin: 0px;
+}
+.partner{
+  width: 300px;
+  max-width: 300px;
+  height: 170px;
+  max-height: 170px;
+  margin-left: -20px;
+}
+.partner img{
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  margin: 0px;
+}
+
+.contactSection{
+  width: 100%;
+  height: fit-content;
+  background-color: #0732EF;
+  overflow: hidden;
+}
+.contactSection h1{
+  font-size: 76px;
+  margin: 100px 0px 0px 0px;
+  color: #F8F6F3;
+  font-family: sans-serif;
+  margin-left: 11%;
+}
+.contactContainer{
+  width: 78%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contactTextForm{
+  color: #F8F6F3;
+  font-family: sans-serif;
+}
+.contactTextForm p{
+  font-size: 20px;
+  margin: 0px;
+}
+.contactDetails{
+  margin-top: 80px;
+}
+
+.contactFormDetails{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
+.contactDetails h2{
+  margin-bottom: 30px;
+}
+.contactDetailsContainer{
+  max-width: 475px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.contactDetail p{
+  font-size: 19px;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column; /* Puts label below input */
+  margin-bottom: 10px;
+}
+.inputContainer label{
+  font-family: sans-serif;
+  color: #F8F6F3;
+  font-size: 24px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+.inputContainer input{
+  font-family: sans-serif;
+  width: 250px;
+  height: 40px;
+  border: 1px solid #F8F6F3;
+  background-color: #0732EF;
+  outline: none;
+  border-radius: 80px;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+textarea{
+  width: 100%;
+  box-sizing: border-box;
+  height: 140px;
+  border-radius: 30px;
+  border: 1px solid #F8F6F3;
+  background-color: #0732EF;
+  outline: none;
+}
+
+form h2{
+  font-family: sans-serif;
+  color: #F8F6F3;
+}
+.messageContainer{
+  margin-top: 30px;
+}
+.form button{
+  width: 220px;
+  height: 52px;
+  border-radius: 50px;
+  border: 1px solid #F8F6F3;
+  color: #F8F6F3;
+  font-size: 18px;
+  background-color: #0732EF;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+.form button:hover{
+  color: #0732EF;
+  background-color: #D9FB99;
+}
+.form{
+  margin-top: 15%;
+  margin-bottom: 50px;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+  main{
+    width: 100%;
+    height: auto;
+    margin-top: 134px;
+    background-color: #F8F6F3;
+ }
+ .introductorySection{
+    height: 65vh;
+    position: relative;
+ }
+ .introductorySectionContainer{
+    flex-direction: column;
+ }
+ .introductorySectionPart{
+    width: 100%;
+ }
+ .introductoryText{
+  z-index: 1;
+ }
+ .introductoryText h1{
+    font-size: 68px;
+ }
+ .textBox{
+    background-color: #F8F6F3;
+ }
+
+ .textBoxReadMore{
+    height: 70px;
+ }
+
+
+.designBoxes{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    z-index: 0;
+}
+
+
+  .aboutUsSection{
+    height: 50vh;
+  }
+  .aboutUsSection-container{
+    width: 95%;
+  }
+  .aboutUsSection-container h1{
+    font-size: 56px;
+  }
+  .aboutUsSection-textBox{
+    max-width: 75%;
+  }
+  .crossSectionImage img{
+    width: 558px;
+    height: 365px;
+    border-radius: 30px;
+    position: absolute;
+    right: 50px;
+    z-index: 1;
+    object-fit: cover;
+    margin-top: -182.5px;
+  }
+
+
+  .ourServicesSectionContainer{
+    width: 95%;
+  }
+  .ourServicesTextBox{
+    font-family: sans-serif;
+    color: #F8F6F3;
+    margin-top: 260px;
+    width: 100% !important;
+  }
+  .ourServicesTextBox h1{
+    font-size: 52px;
+    margin: 0px;
+  }
+  .serviceBoxes{
+    width: 100%;
+    height: fit-content;
+    margin-top: 50px;
+  }
+  .serviceBoxContainer{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    display: block;
+  }
+  .upperContainer,
+  .bottomContainer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .upperContainer{
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  .service{
+    width: 39.5%;
+    height: 285px;
+    border-radius: 20px;
+    border: 1px solid #D9FB99;
+  }
+  .serviceContainer{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .serviceTextBox{
+    font-family: sans-serif;
+    color: white;
+  }
+  .serviceTextBox h2{
+    font-family: sans-serif;
+    color: white;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+  }
+  .serviceTextBox p{
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    font-weight: lighter;
+    line-height: 25px;
+  }
+
+  .boostinBusinessPart h1{
+    font-size: 76px;
+  }
+  .showCases{
+    width: 100%;
+  }
+  .showCases svg{
+    width: 140px;
+    height: 140px;
+  }
+  .showcaseText h2{
+    font-size: 42px;
+  }
+  .showCasesContainer{
+    width: 95%;
+  }
+  .showcaseDesign{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .industrySection{
+    height: 68vh;
+  }
+
+  .proccessSection{
+    min-height: 100vh;
+    height: fit-content;
+  }
+  .proccessSectionTitleBox{
+    width: 78%;
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .proccessSectionTitleBox h1{
+    font-size: 76px;
+    font-family: sans-serif;
+    color: #0732EF;
+    margin: 0;
+    margin-top: 40px;
+    letter-spacing: -2px;
+  }
+  .proccessSectionTitleBox h2{
+    font-family: sans-serif;
+    color: #0732EF;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    margin: 0;
+    margin-top: 15px;
+  }
+  .innderProccessSection{
+    display: flex;
+    align-items: center;
+  }
+  .innerProccessSection{
+    width: 78%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .processStepContainer{
+    width: 70%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .proccessSteps{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+  .proccessSectionContainer hr{
+    border: none;
+    height: 1px;
+    color: #0732EF;
+    background-color: #0732EF;
+    margin-top: 30px;
+  }
+  .processIndex{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 48px;
+    font-family: sans-serif;
+    color: #0732EF;
+    margin: 0;
+    letter-spacing: -2px;
+  }
+  .processTitle{
+    width: 24%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 22px;
+    font-family: sans-serif;
+    color: #0732EF;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .processDescription{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #0732EF;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .processDescription p{
+    max-width: 295px;
+  }
+  .innerProccessSection:hover .processIndex{
+    font-size: 60px;
+    transition: 0.65s;
+  }
+  .successStories{
+    width: 100%;
+  }
+  .successStoriesContainer{
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .successStoriesTextBox{
+    margin-top: 200px;
+  }
+  .successStoriesTextBox h1{
+    font-size: 76px;
+    font-family: sans-serif;
+    color: #0732EF;
+    margin: 0;
+    letter-spacing: -2px;
+  }
+  .successStoriesTextBox p{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #0732EF;
+    margin: 30px 0px 0px 0px;
+    font-weight: lighter;
+  }
+  .successStoriesBox{
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    float: right;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .storyProfile{
+    border-radius: 50%;
+  }
+  .successStoryParagraph p{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #0732EF;
+    max-width: 295px;
+    margin: 0;
+  }
+  .successStoryParagraph h2{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #0732EF;
+    max-width: 295px;
+  }
+  .scheduler{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  #calendar{
+    width: 100% !important;
+  }
+  .fc-header-toolbar.fc-toolbar {
+    width: 93%;
+    margin-left: 2%;
+  }
+  table{
+    width: 100% !important;
+  }
+  tbody{
+    width: 100% !important;
+  }
+  .fc-scrollgrid-sync-table{
+    width: 95% !important;
+  }
+  .fc-scrollgrid-sync-inner{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    align-items: center;
+  }
+  .fc-col-header-cell-cushion{
+    text-align: center;
+    margin: 0px;
+  }
+  .fc .fc-col-header-cell-cushion {
+    margin-left: 0px !important;
+  }
+  .fc-scrollgrid-sync-table{
+    width: 100% !important;
+  }
+
+
+  .partners{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
+  .partnersBox{
+    width: 90%;
+    margin-left: auto;
+    margin-right: ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .partners h1{
+    color: #0732EF;
+    font-family: sans-serif;
+    font-size: 76px;
+    margin: 0px;
+  }
+  .partner{
+    width: 200px;
+    max-width: 200px;
+    height: 170px;
+    max-height: 170px;
+    margin-left: -20px;
+  }
+  .partner img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: 0px;
+  }
+  
+  .contactSection{
+    width: 100%;
+    height: fit-content;
+    background-color: #0732EF;
+    overflow: hidden;
+  }
+  .contactSection h1{
+    font-size: 76px;
+    margin: 100px 0px 0px 0px;
+    color: #F8F6F3;
+    font-family: sans-serif;
+    margin-left: 2.5%;
+  }
+  .contactContainer{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .contactTextForm{
+    color: #F8F6F3;
+    font-family: sans-serif;
+  }
+  .contactTextForm p{
+    font-size: 20px;
+    margin: 0px;
+  }
+  .contactDetails{
+    margin-top: 80px;
+  }
+  
+  .contactFormDetails{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .contactDetails h2{
+    margin-bottom: 30px;
+  }
+  .contactDetailsContainer{
+    max-width: 475px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .contactDetail p{
+    font-size: 19px;
+  }
+  .inputContainer {
+    display: flex;
+    flex-direction: column; /* Puts label below input */
+    margin-bottom: 10px;
+  }
+  .inputContainer label{
+    font-family: sans-serif;
+    color: #F8F6F3;
+    font-size: 24px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+  }
+  .inputContainer input{
+    font-family: sans-serif;
+    width: 230px;
+    height: 40px;
+    border: 1px solid #F8F6F3;
+    background-color: #0732EF;
+    outline: none;
+    border-radius: 80px;
+    font-size: 24px;
+    font-weight: lighter;
+  }
+  
+  textarea{
+    width: 100%;
+    box-sizing: border-box;
+    height: 130px;
+    border-radius: 30px;
+    border: 1px solid #F8F6F3;
+    background-color: #0732EF;
+    outline: none;
+  }
+  
+  form h2{
+    font-family: sans-serif;
+    color: #F8F6F3;
+  }
+  .messageContainer{
+    margin-top: 30px;
+  }
+  .form button{
+    width: 220px;
+    height: 52px;
+    border-radius: 50px;
+    border: 1px solid #F8F6F3;
+    color: #F8F6F3;
+    font-size: 18px;
+    background-color: #0732EF;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+  .form button:hover{
+    color: #0732EF;
+    background-color: #D9FB99;
+  }
+  .form{
+    margin-top: 15%;
+    margin-bottom: 50px;
+  }
+  
+}
+
+@media only screen and (max-width: 850px) {
+  .aboutUsSection{
+    height: 75vh;
+  }
+  .aboutUsSection-container{
+    width: 95%;
+  }
+  .aboutUsSection-container h1{
+    font-size: 56px;
+  }
+  .aboutUsSection-textBox{
+    max-width: 75%;
+  }
+  .crossSectionImage img{
+    width: 558px;
+    height: 365px;
+    border-radius: 30px;
+    position: absolute;
+    right: 50px;
+    z-index: 1;
+    object-fit: cover;
+    margin-top: -182.5px;
+  }
+  .contactSection{
+    width: 100%;
+    height: fit-content;
+    background-color: #0732EF;
+    overflow: hidden;
+  }
+  .contactContainer{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  
+  .contactTextForm{
+    color: #F8F6F3;
+    font-family: sans-serif;
+    width: 70%;
+  }
+  .contactTextForm h1{
+    font-size: 46px;
+    margin: 100px 0px 0px 0px;
+  }
+  .contactTextForm p{
+    font-size: 20px;
+    margin: 0px;
+  }
+  .contactDetails{
+    margin-top: 80px;
+  }
+  
+  .contactFormDetails{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .contactForm{
+    width: 98%;
+    box-sizing: border-box;
+  }
+  .contactDetails h2{
+    margin-bottom: 30px;
+  }
+  .contactDetailsContainer{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .contactDetail p{
+    font-size: 19px;
+  }
+  .inputContainer {
+    display: flex;
+    flex-direction: column; /* Puts label below input */
+    margin-bottom: 10px;
+  }
+  .inputContainer label{
+    font-family: sans-serif;
+    color: #F8F6F3;
+    font-size: 24px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+  }
+  .inputContainer input{
+    font-family: sans-serif;
+    width: 100%;
+    height: 43px;
+    border: 1px solid #F8F6F3;
+    background-color: #0732EF;
+    outline: none;
+    border-radius: 80px;
+    font-size: 24px;
+    font-weight: lighter;
+  }
+  
+  textarea{
+    width: 100%;
+    box-sizing: border-box;
+    height: 180px;
+    border-radius: 30px;
+    border: 1px solid #F8F6F3;
+    background-color: #0732EF;
+    outline: none;
+  }
+  
+  .form button{
+    width: 100%;
+    height: 52px;
+    border-radius: 50px;
+    border: 1px solid #F8F6F3;
+    color: #F8F6F3;
+    font-size: 18px;
+    background-color: #0732EF;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+  
+  form h2{
+    font-family: sans-serif;
+    color: #F8F6F3;
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  .messageContainer{
+    margin-top: 30px;
+  }
+  
+  .form button:hover{
+    color: #0732EF;
+    background-color: #D9FB99;
+  }
+  .form{
+    margin-top: 10%;
+    margin-bottom: 50px;
+  }
+  .contactSection h1{
+    font-size: 46px;
+    margin: 100px 0px 0px 0px;
+    color: #F8F6F3;
+    font-family: sans-serif;
+    margin-left: 2.5%;
+  }
+  
+  #fc-dom-1{
+    margin-left: 25px;
+    color: #0732EF;
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header{
+    z-index: 9999;
+  }
+  main{
+    width: 100%;
+    max-width: 1200px; /* Adjust this to your layout */
+    height: auto;
+    margin-top: 134px;
+    background-color: #F8F6F3;
+    position: relative; /* Ensure it contains absolutely positioned children */
+    overflow: hidden; /* Prevents elements from overflowing */
+ }
+ .introductorySection{
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+ }
+ .introductorySectionContainer{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+ }
+ .introductorySectionPart{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+ }
+
+ .introductoryText h1{
+    font-size: 36px;
+ }
+ 
+ .textBoxesContainer{
+    flex-direction: column;
+    margin-top: 590px;
+    margin-bottom: 20px;
+    z-index: 10;
+ }
+  .textBox{
+    width: 89.7%;
+    height: 350px;
+    margin-bottom: 0px;
+    z-index: 1;
+ }
+ .textBoxContainer{
+    width: 85%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+ } 
+ .introductoryText button{
+  margin-top: 10px;
+ }
+ .textBoxTitle h2{
+    font-size: 2rem;
+ }
+ .textBoxTitle p{
+    font-size: 1.7rem;
+ }
+ .textBoxReadMore{
+  height: 60px;
+ }
+ .textBoxReadMore span{
+  font-size: 1.7rem;
+  display: inline-block;
+  margin-top: 0px;
+}
+ .designBoxes{
+    height: 100vh;
+    width: 95%;
+    top: 0; /* Adjust top if needed */
+    position: absolute;
+    margin-top: 290px;
+  }
+  .designBoxesContainer {
+    width: 100%; /* or fixed width if needed */
+    margin-left: 0%;
+  }
+  .designBox {
+    height: 9.5rem; /* control height */
+  }
+
+
+  .aboutUsSection{
+    width: 100%;
+    height: fit-content;
+    background-color: #BCC5F2;
+  }
+  .aboutUsSection-container{
+    width: 95%;
+  }
+  .aboutUsSection-container h1{
+    font-size: 46px;
+    margin-top: 80px;
+  }
+  .aboutUsSection-textBox{
+    max-width: 100%;
+  }
+  .aboutUsSection-textBox h2{
+    font-family: sans-serif;
+    color: #0732EF;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+  }
+  .aboutUsSection-textBox .textBoxParagraph{
+    max-width: 100%;
+  }
+  .aboutUsSection button{
+    margin-top: 20px;
+    margin-bottom: 150px;
+  }
+  .crossSectionImage img{
+    margin-top: -132.5px;
+    width: 95%;
+    height: 265px;
+    border-radius: 30px;
+    position: absolute;
+    left: 2.5%;
+    z-index: 1;
+    object-fit: cover;
+  }
+
+
+  .ourServicesSectionContainer{
+    width: 95%;
+  }
+  .ourServicesTextBox{
+    max-width: 100%;
+    margin-top: 200px;
+  }
+  .ourServicesTextBox h1{
+    font-size: 46px;
+  }
+  .ourServicesTextBox p{
+    margin: 0px;
+  }
+
+  .serviceBoxes{
+    width: 100%;
+    height: fit-content;
+    margin-top: 50px;
+  }
+  .serviceBoxContainer{
+    max-width: inherit;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    display: block;
+  }
+  .upperContainer,
+  .bottomContainer{
+    display: block;
+    margin-top: 20px;
+  }
+  .upperContainer{
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  .service{
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 20px;
+  }
+  
+  
+  .boostinBusinessPart{
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+  .boostinBusinessPart h1{
+    font-size: 40px;
+  }
+  .showCases{
+    width: 100%;
+  }
+  .showCasesContainer{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .showcase{
+    width: 220px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  .showcaseDesign{
+    width: 100%;
+    height: fit-content;
+  }
+  
+  .showcaseText{
+    margin-top: 0px;
+  }
+  .showcaseText h2{
+    font-size: 60px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    padding: 0;
+    margin: 0px;
+  }
+  .showcase p{
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 1.8px;
+    padding: 0;
+    margin: 5px 0 0 0 ;
+  }
+  .showcase svg{
+    margin-top: 20px;
+  }
+
+
+  .industrySection{
+    width: 100%;
+    height: fit-content;
+    background-color: #F8F6F3;
+  }
+  .inudstrySectionContainer{
+    width: 95%;
+  }
+  .inudstrySectionContainer img{
+    width: 95% !important;
+    height: 265px !important;
+    border-radius: 30px;
+    left: 0px;
+    margin-left: 2.5%;
+    position: absolute;
+    margin-top: -120px !important;
+    z-index: 1;
+    object-fit: cover;
+  }
+
+  .industrySectionTextBox h1{
+    font-size: 46px !important;
+  }
+  .industryBoxContainer{
+    display: block !important;
+    gap: 75px;
+  }
+  .industryBox{
+    max-width: 100% !important;
+  }
+  .industryBox h2{
+    font-family: sans-serif;
+    color: #0732EF;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+  }
+  .industryBox p{
+    font-family: sans-serif;
+    color: #0732EF;
+    font-size: 19px;
+    letter-spacing: 0.2px;
+    font-weight: lighter;
+    line-height: 32px;
+  }
+
+
+  .proccessSection{
+    width: 100%;
+    min-height: 200vh;
+    background-color: #BCC5F2;
+    overflow: hidden;
+  }
+  .proccessSectionTitleBox{
+    width: 95%;
+    margin-top: 200px;
+  }
+  .proccessSectionTitleBox h1{
+    font-size: 46px;
+    margin: 0px;
+  }
+  .proccessSectionTitleBox h2{
+    font-size: 24px;
+    margin-top: 15px;
+    font-weight: lighter;
+  }
+  .innderProccessSection{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .innerProccessSection{
+    width: 95%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .proccessSteps{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .proccessSectionContainer hr{
+    border: none;
+    height: 1px;
+    color: #0732EF;
+    background-color: #0732EF;
+    margin-top: 30px;
+  }
+  .processStepContainer{
+    width: 70%;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: block;
+    justify-content: space-between;
+  }
+  .processIndex{
+    width: 10%;
+    font-size: 46px;
+  }
+  .processTitle{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #0732EF;
+    margin: 0;
+  }
+  .processDescription{
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+  }
+  .processTitle p{
+    margin: 0px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .processDescription p{
+    max-width: 100%;
+    margin: 0px;
+  }
+  .innerProccessSection:hover .processIndex{
+    font-size: 50px;
+    transition: 0.65s;
+  }
+  .successStories{
+    width: 100%;
+  }
+  .successStoriesContainer{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .successStoriesBox{
+    width: 100%;
+  }
+  .successStoryBox{
+    width: 100%;
+  }
+  .successStoriesTextBox{
+    margin-top: 100px;
+  }
+  .successStoriesTextBox h1{
+    font-size: 46px;
+  }
+  .successStoriesBox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+    float: left;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  .storyProfile{
+    border-radius: 50%;
+  }
+  .successStoryParagraph p{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #0732EF;
+    max-width: 295px;
+    margin: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .successStoryParagraph h2{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #0732EF;
+    max-width: 295px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .schedulerSection{
+    width: 100%;
+    margin-top: 0px;
+  }
+  .schedulerContainer{
+    width: 95%;
+    margin-top: 50px;
+  }
+  .schedulerTextBox h1{
+    font-size: 46px;
+    margin: 0px;
+  }
+  .schedulerTextBox p{
+    font-size: 20px;
+    margin: 10px 0px 0px 5px;
+  }
+
+  .scheduler{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 50px;
+    border: 1px solid #0732EF;
+    padding: 5px;
+    border-radius: 30px;
+    margin-left: 0px;
+    width: 98%;
+  }
+
+  #calendar {
+    max-width: 100% !important;
+    width: 100% !important;  /* Set the width to 400px */
+    height: 475px !important; /* Set the height to 400px */
+    margin-top: 20px;
+    margin-left: -1%;
+  }
+  .fc-day{
+    border-radius: 50%;
+  }
+  .fc-daygrid-day-frame.fc-scrollgrid-sync-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fc-daygrid-day-top{
+    margin-left: 2px;
+  }
+  .timeSlots{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+  .timeSlot{
+    width: 100px;
+    height: 33px;
+  }
+  
+
+
+.partners{
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+.partnersBox{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.partners h1{
+  color: #0732EF;
+  font-family: sans-serif;
+  font-size: 46px;
+  margin: 0px;
+}
+.partner{
+  width: 200px;
+  max-width: 200px;
+  height: 100px;
+  max-height: 100px;
+  margin-left: -20px;
+}
+.partner img{
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  margin: 0px;
+}
+
+
+.contactSection{
+  width: 100%;
+  height: fit-content;
+  background-color: #0732EF;
+  overflow: hidden;
+}
+.contactContainer{
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.contactTextForm{
+  color: #F8F6F3;
+  font-family: sans-serif;
+}
+.contactTextForm h1{
+  font-size: 46px;
+  margin: 100px 0px 0px 0px;
+}
+.contactTextForm p{
+  font-size: 20px;
+  margin: 0px;
+}
+.contactDetails{
+  margin-top: 80px;
+}
+
+.contactFormDetails{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 30px;
+}
+.contactForm{
+  width: 98%;
+  box-sizing: border-box;
+}
+.contactDetails h2{
+  margin-bottom: 30px;
+}
+.contactDetailsContainer{
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.contactDetail p{
+  font-size: 19px;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column; /* Puts label below input */
+  margin-bottom: 10px;
+}
+.inputContainer label{
+  font-family: sans-serif;
+  color: #F8F6F3;
+  font-size: 24px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+.inputContainer input{
+  font-family: sans-serif;
+  width: 100%;
+  height: 43px;
+  border: 1px solid #F8F6F3;
+  background-color: #0732EF;
+  outline: none;
+  border-radius: 80px;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+textarea{
+  width: 100%;
+  box-sizing: border-box;
+  height: 180px;
+  border-radius: 30px;
+  border: 1px solid #F8F6F3;
+  background-color: #0732EF;
+  outline: none;
+}
+
+.form button{
+  width: 100%;
+  height: 52px;
+  border-radius: 50px;
+  border: 1px solid #F8F6F3;
+  color: #F8F6F3;
+  font-size: 18px;
+  background-color: #0732EF;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+form h2{
+  font-family: sans-serif;
+  color: #F8F6F3;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+.messageContainer{
+  margin-top: 30px;
+}
+
+.form button:hover{
+  color: #0732EF;
+  background-color: #D9FB99;
+}
+.form{
+  margin-top: 10%;
+  margin-bottom: 50px;
+}
+.contactSection h1{
+  font-size: 46px;
+  margin: 100px 0px 0px 0px;
+  color: #F8F6F3;
+  font-family: sans-serif;
+  margin-left: 2.5%;
+}
+
+#fc-dom-1{
+  margin-left: 25px;
+  color: #0732EF;
+  font-size: 18px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  header{
+    z-index: 9999;
+  }
+  main{
+    width: 100%;
+    max-width: 1200px; /* Adjust this to your layout */
+    height: auto;
+    margin-top: 134px;
+    background-color: #F8F6F3;
+    position: relative; /* Ensure it contains absolutely positioned children */
+    overflow: hidden; /* Prevents elements from overflowing */
+ }
+ .introductorySection{
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+ }
+ .introductorySectionContainer{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+ }
+ .introductorySectionPart{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+ }
+
+ .introductoryText h1{
+    font-size: 36px;
+ }
+ 
+ .textBoxesContainer{
+    flex-direction: column;
+    margin-top: 590px;
+    margin-bottom: 20px;
+    z-index: 10;
+ }
+  .textBox{
+    width: 89.7%;
+    height: 350px;
+    margin-bottom: 0px;
+    z-index: 1;
+ }
+ .textBoxContainer{
+    width: 85%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+ } 
+ .introductoryText button{
+    margin-top: 10px;
+ }
+ .textBoxTitle h2{
+    font-size: 1.7rem;
+ }
+ .textBoxTitle p{
+    font-size: 1.1rem;
+ }
+ .textBoxReadMore{
+    height: 60px;
+ }
+ .textBoxReadMore span{
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-top: 0px;
+ }
+}
+
+@media only screen and (max-width: 375px) {
+  header{
+    z-index: 9999;
+  }
+  main{
+    width: 100%;
+    max-width: 1200px; /* Adjust this to your layout */
+    height: auto;
+    margin-top: 134px;
+    background-color: #F8F6F3;
+    position: relative; /* Ensure it contains absolutely positioned children */
+    overflow: hidden; /* Prevents elements from overflowing */
+ }
+ .introductorySection{
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+ }
+ .introductorySectionContainer{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+ }
+ .introductorySectionPart{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+ }
+
+ .introductoryText h1{
+    font-size: 36px;
+ }
+ 
+ .textBoxesContainer{
+    flex-direction: column;
+    margin-top: 590px;
+    margin-bottom: 20px;
+    z-index: 10;
+ }
+  .textBox{
+    width: 89.7%;
+    height: 350px;
+    margin-bottom: 0px;
+    z-index: 1;
+ }
+ .textBoxContainer{
+    width: 85%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+ } 
+ .introductoryText button{
+  margin-top: 10px;
+ }
+ .textBoxTitle h2{
+    font-size: 1.7rem;
+ }
+ .textBoxTitle p{
+    font-size: 1.2rem;
+ }
+ .textBoxReadMore{
+  height: 60px;
+ }
+ .textBoxReadMore span{
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-top: 0px;
+}
+ .designBoxes{
+    height: 100vh;
+    width: 95%;
+    top: 0; /* Adjust top if needed */
+    position: absolute;
+    margin-top: 290px;
+  }
+  .designBoxesContainer {
+    width: 100%; /* or fixed width if needed */
+    margin-left: 0%;
+  }
+  .designBox {
+    height: 9.5rem; /* control height */
+  }
